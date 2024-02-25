@@ -1,0 +1,304 @@
+﻿Log file open, 02/23/24 19:14:37
+LogInit: LLM is enabled
+LogInit: LLM CsvWriter: off TraceWriter: off
+LogInit: Display: Running engine for game: mini_manhattan
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.325743
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -8:00, Platform Override: ''
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin XGEController
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessNode
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin BlueprintMaterialTextureNodes
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin Landmass
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Water
+LogPluginManager: Mounting plugin LuminPlatformFeatures
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin CesiumForUnreal
+LogPluginManager: Found config from plugin[CesiumForUnreal] C:/Users/jtigu/OneDrive/Documents/UAVPathPlanning/UEMaps/Map/mini_manhattan/Saved/Config/Windows/Engine.ini
+LogPluginManager: Mounting plugin MathWorksSimulation
+LogPluginManager: Mounting plugin MathWorksUAVContent
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SunPosition
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin XRVisualization
+LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+LogWindows: Failed to load 'C:/Program Files/Epic Games/UE_4.26/Engine/Plugins/MathWorks/MathWorksSimulation/Binaries/Win64/UE4Editor-MathWorksSimulation.dll' (GetLastError=126)
+LogWindows:   Missing import: libMatlabDataArray.dll
+LogWindows:   Missing import: libmwshared_sim3d_io.dll
+LogWindows:   Looked in: ../../../Engine/Binaries/Win64
+LogWindows:   Looked in: ../../../../../../Users/jtigu/OneDrive/Documents/UAVPathPlanning/UEMaps/Map/mini_manhattan/Binaries/Win64
+LogWindows:   Looked in: C:\Users\jtigu\OneDrive\Documents\UAVPathPlanning\UEMaps\Map\mini_manhattan\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Marketplace\CesiumForUnreal\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\SunPosition\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\Water\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\Landmass\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\FX\Niagara\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\GeometryProcessing\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\BlueprintMaterialTextureNodes\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\MathWorks\MathWorksSimulation\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\ProceduralMeshComponent\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\PhysXVehicles\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\XR\XRVisualization\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\MeshPainting\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\XGEController\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\2D\Paper2D\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\AI\AISupport\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\AI\EnvironmentQueryEditor\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Blendables\LightPropagationVolume\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Cameras\CameraShakePreviewer\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\AnimationSharing\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\SignificanceManager\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\CodeLiteSourceCodeAccess\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\CLionSourceCodeAccess\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\GitSourceControl\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\KDevelopSourceCodeAccess\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\NullSourceCodeAccess\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\PlasticSourceControl\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\PerforceSourceControl\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\PluginUtils\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\PropertyAccessNode\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\PropertyAccess\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\RiderSourceCodeAccess\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\SubversionSourceControl\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\UObjectPlugin\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\VisualStudioCodeSourceCodeAccess\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\VisualStudioSourceCodeAccess\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\AssetManagerEditor\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Developer\XCodeSourceCodeAccess\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\CryptoKeys\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\CurveEditorTools\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\DataValidation\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\FacialAnimation\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\GameplayTagsEditor\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\GeometryMode\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\MacGraphicsSwitching\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\MaterialAnalyzer\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\MobileLauncherProfileWizard\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\PluginBrowser\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\SpeedTreeImporter\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Enterprise\DatasmithContent\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Enterprise\VariantManagerContent\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\AlembicImporter\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\GeometryCache\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\AutomationUtils\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Tests\ScreenshotTools\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\BackChannel\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\ChaosCloth\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\ChaosClothEditor\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\ChaosEditor\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\PlanarCutPlugin\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\EditableMesh\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\GeometryCollectionPlugin\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\ChaosSolverPlugin\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\ChaosNiagara\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\CharacterAI\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\MotoSynth\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\PlatformCrypto\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\ProxyLODPlugin\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Experimental\SkeletalReduction\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Lumin\LuminPlatformFeatures\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Lumin\MLSDK\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Lumin\MagicLeap\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Lumin\MagicLeapPassableWorld\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Lumin\MagicLeapLightEstimation\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Lumin\MagicLeapMedia\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Media\AndroidMedia\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Media\AvfMedia\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Media\ImgMedia\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Media\MediaCompositing\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Media\MediaPlayerEditor\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Media\WmfMedia\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Messaging\TcpMessaging\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Messaging\UdpMessaging\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\MovieScene\ActorSequence\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\MovieScene\LevelSequenceEditor\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\MovieScene\MatineeToLevelSequence\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\MovieScene\TemplateSequence\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Online\OnlineSubsystem\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Online\OnlineSubsystemNull\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Online\OnlineSubsystemUtils\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Portal\LauncherChunkInstaller\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\ActorLayerUtilities\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\AndroidDeviceProfileSelector\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\AndroidMoviePlayer\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\AndroidPermission\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\AppleImageUtils\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\AppleMoviePlayer\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\ArchVisCharacter\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\AssetTags\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\AudioCapture\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\CableComponent\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\ChunkDownloader\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\CustomMeshComponent\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\ExampleDeviceProfileSelector\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\GoogleCloudMessaging\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\GooglePAD\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\IOSDeviceProfileSelector\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\LinuxDeviceProfileSelector\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\LocationServicesBPLibrary\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\MobilePatchingUtils\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\PostSplashScreen\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\RuntimePhysXCooking\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\SoundFields\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\Synthesis\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\AudioSynesthesia\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\WebMMoviePlayer\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Media\WebMMedia\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\WindowsMoviePlayer\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\ContentBrowser\ContentBrowserClassDataSource\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Editor\ContentBrowser\ContentBrowserAssetDataSource\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Online\Android\OnlineSubsystemGooglePlay\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Online\IOS\OnlineSubsystemIOS\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\Oculus\OculusVR\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Plugins\Runtime\Steam\SteamVR\Binaries\Win64
+LogWindows:   Looked in: C:\Program Files\Epic Games\UE_4.26\Engine\Binaries\Win64\(Path="")\lib\win64
+LogModuleManager: Warning: ModuleManager: Unable to load module 'C:/Program Files/Epic Games/UE_4.26/Engine/Plugins/MathWorks/MathWorksSimulation/Binaries/Win64/UE4Editor-MathWorksSimulation.dll' because the file couldn't be loaded by the OS.
+Message dialog closed, result: Ok, title: Message, text: Plugin 'MathWorksSimulation' failed to load because module 'MathWorksSimulation' could not be loaded.  There may be an operating system error or the module may not be properly set up.
+LogCore: Engine exit requested (reason: EngineExit() was called)
+LogExit: Preparing to exit.
+LogModuleManager: Shutting down and abandoning module MLSDK (66)
+LogModuleManager: Shutting down and abandoning module MagicLeap (64)
+LogModuleManager: Shutting down and abandoning module Water (62)
+LogModuleManager: Shutting down and abandoning module ChaosCloth (60)
+LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (58)
+LogModuleManager: Shutting down and abandoning module NiagaraShader (56)
+LogModuleManager: Shutting down and abandoning module VariantManagerContent (54)
+LogModuleManager: Shutting down and abandoning module DatasmithContent (52)
+LogModuleManager: Shutting down and abandoning module AISupportModule (50)
+LogModuleManager: Shutting down and abandoning module DesktopPlatform (48)
+LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (46)
+LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (44)
+LogModuleManager: Shutting down and abandoning module PlatformCrypto (42)
+LogModuleManager: Shutting down and abandoning module XGEController (40)
+LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
+LogModuleManager: Shutting down and abandoning module AudioEditor (36)
+LogModuleManager: Shutting down and abandoning module PropertyEditor (35)
+LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+LogModuleManager: Shutting down and abandoning module RenderCore (30)
+LogModuleManager: Shutting down and abandoning module Landscape (28)
+LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+LogModuleManager: Shutting down and abandoning module Renderer (18)
+LogModuleManager: Shutting down and abandoning module Engine (16)
+LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+LogModuleManager: Shutting down and abandoning module PakFile (4)
+LogModuleManager: Shutting down and abandoning module RSA (3)
+LogExit: Exiting.
+Log file closed, 02/23/24 19:14:40
