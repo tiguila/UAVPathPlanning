@@ -4,7 +4,7 @@ ss.StateBounds = [map2D.XWorldLimits; map2D.YWorldLimits; [-pi pi]];
 
 sv = validatorOccupancyMap(ss);
 
-sv.Map = map2D;
+sv.Map = map2DClean;
 
 planner = plannerHybridAStar(sv, ...
                              MinTurningRadius=4, ...
