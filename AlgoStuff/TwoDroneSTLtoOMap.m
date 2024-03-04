@@ -3,14 +3,14 @@ close all;
 close all hidden;
 
 % Define the total simulation time in seconds
-simTime = 120;
+simTime = 240;
 
 % Set the update rate for the simulation in Hz
 updateRate = 10;
 
 % Define parameters for snake path
-num_points = 1000; % Number of points to represent the snake path
-frequency = 0.05; % Frequency of the sinusoidal curve
+num_points = 700; % Number of points to represent the snake path
+frequency = pi/4; % Frequency of the sinusoidal curve
 amplitude = 180; % Amplitude of the sinusoidal curve
 z_value = 100; % Constant value for the Z dimension
 
@@ -115,7 +115,7 @@ ptIdx = 0;
 
 tic
 % Main simulation loop
-while Scenario.IsRunning && counter < 1000
+while Scenario.IsRunning && counter < 10000
     % Increment index for data storage
     ptIdx = ptIdx + 1;
 

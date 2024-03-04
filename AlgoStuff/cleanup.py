@@ -40,3 +40,4 @@ for x in range(0,im.getbbox()[2]):
             im.putpixel((x,y),(255,255,255))
         approx = 0
 im.save("./ManhattanCleaned.jpg");
+print("DONE")
