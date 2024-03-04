@@ -13,13 +13,15 @@ num_points = 700; % Number of points to represent the snake path
 frequency = pi/4; % Frequency of the sinusoidal curve
 amplitude = 180; % Amplitude of the sinusoidal curve
 z_value = 100; % Constant value for the Z dimension
+length = 600;
+width = 450;
 
 % Initialize variables
 snake_path = zeros(num_points, 3); % Transposed to 1000x3
 
 % Generate snake path
-x_values = linspace(0, 600, num_points); % Generate evenly spaced x-values
-y_values = (450 / 2) + amplitude * sin(frequency * x_values); % Calculate corresponding y-values
+x_values = linspace(0, length, num_points); % Generate evenly spaced x-values
+y_values = (width / 2) + amplitude * sin(frequency * x_values); % Calculate corresponding y-values
 
 % Store waypoints with Z dimension
 snake_path(:, 1) = x_values;
