@@ -2,9 +2,9 @@
 close all;
 close all hidden;
 
-Scenario = uavScenario;
+Scenerio = uavScenario();
 stltri = stlread("manhattan.stl");
-addMesh(Scenario,"custom",{stltri.Points stltri.ConnectivityList},[0.6350 0.0780 0.1840]);
+addMesh(Scenerio,"custom",{stltri.Points stltri.ConnectivityList},[0.6350 0.0780 0.1840])
 
 % Define the total simulation time in seconds
 simTime = 240;
@@ -24,7 +24,7 @@ width = 450;
 snake_path = zeros(num_points, 3); % Transposed to 1000x3
 
 % Generate snake path
-x_values = linspace(0, length, num_points) % Generate evenly spaced x-values
+x_values = linspace(0, length, num_points); % Generate evenly spaced x-values
 y_values = (width / 2) + amplitude * sin(frequency * x_values); % Calculate corresponding y-values
 
 % Store waypoints with Z dimension
@@ -39,10 +39,10 @@ orientation_eul = [0 0 0];
 orientation_quat = quaternion(eul2quat(orientation_eul));
 
 % Create a matrix to repeat the same initial orientation for all waypoints
-orientation_vec = repmat(orientation_quat,700,1);
+orientation_vec = repmat(orientation_quat,length(x_values),1);
 
 % Create an array of time points corresponding to each waypoint for a smooth trajectory
-time = 0:(simTime/(700-1)):simTime;
+time = 0:(simTime/(length(x_values)-1)):simTime;
 
 % Define a waypointTrajectory object representing the UAV's planned path
 trajectory = waypointTrajectory("Waypoints",snake_path,"Orientation",orientation_vec, ...
