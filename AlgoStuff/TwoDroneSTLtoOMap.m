@@ -3,9 +3,9 @@ close all;
 close all hidden;
 
 Scenario = uavScenario;
-stltri = stlread("manhattan.stl");
+stltri = stlread("with_ground_manhattan2_1.stl");
 addMesh(Scenario,"custom",{stltri.Points stltri.ConnectivityList},[0.6350 0.0780 0.1840]);
-
+ax = show3D(Scenario);
 % Define the total simulation time in seconds
 simTime = 240;
 
@@ -17,14 +17,14 @@ num_points = 700; % Number of points to represent the snake path
 frequency = pi/4; % Frequency of the sinusoidal curve
 amplitude = 180; % Amplitude of the sinusoidal curve
 z_value = 100; % Constant value for the Z dimension
-length = 600;
-width = 450;
+length = ax.XLim(2);
+width = ax.YLim(2);
 
 % Initialize variables
 snake_path = zeros(num_points, 3); % Transposed to 1000x3
 
 % Generate snake path
-x_values = linspace(0, length, num_points) % Generate evenly spaced x-values
+x_values = linspace(0, length, num_points); % Generate evenly spaced x-values
 y_values = (width / 2) + amplitude * sin(frequency * x_values); % Calculate corresponding y-values
 
 % Store waypoints with Z dimension
@@ -39,10 +39,10 @@ orientation_eul = [0 0 0];
 orientation_quat = quaternion(eul2quat(orientation_eul));
 
 % Create a matrix to repeat the same initial orientation for all waypoints
-orientation_vec = repmat(orientation_quat,700,1);
+orientation_vec = repmat(orientation_quat,num_points,1);
 
 % Create an array of time points corresponding to each waypoint for a smooth trajectory
-time = 0:(simTime/(700-1)):simTime;
+time = 0:(simTime/(num_points-1)):simTime;
 
 % Define a waypointTrajectory object representing the UAV's planned path
 trajectory = waypointTrajectory("Waypoints",snake_path,"Orientation",orientation_vec, ...
@@ -70,8 +70,8 @@ lidar = uavSensor("Lidar",plat,lidarmodel,"MountingLocation",[0 0 -1],"MountingA
 [ax, plotFrames] = show3D(Scenario);
 
 % Set axis limits for the visualization
-xlim([-15 630]);
-ylim([-15 630]);
+xlim([-15 3100]);
+ylim([-15 2600]);
 zlim([0 110]);
 
 % Set the viewing angle for the visualization
@@ -141,8 +141,8 @@ while Scenario.IsRunning && counter < 10000
         % Update 3D visualization with current simulation state and combined point cloud
         figure(1)
         show3D(Scenario,"Time",lidarSampleTime,"FastUpdate",true,"Parent",ax);
-        xlim([0 600]);
-        ylim([0 400]);
+        xlim([0 3100]);
+        ylim([0 2500]);
         zlim([0 110]);
         view([-110 20]);
         refreshdata
