@@ -12,5 +12,6 @@ planner = plannerHybridAStar(sv, ...
 
 startPose = [50 350 pi/2]; % [meters, meters, radians]
 goalPose = [550 100 -pi/2];
-refpath = plan(planner,startPose,goalPose);     
+[refpath] = plan(planner,startPose,goalPose);     
 show(planner)
+"A* Complete"

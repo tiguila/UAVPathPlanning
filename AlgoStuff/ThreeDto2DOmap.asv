@@ -19,8 +19,5 @@ figure
 show(map2D)
 axis off;
 set(gcf, "Name", '');
-binaryData = occupancyMatrix(map2D);
-regularData = ~binaryData;
-imshow(regularData, 'InitialMagnification', 'fit');
-imwrite(regularData, "Manhattan.jpg");
-"ThreeDto2DOmap Finished"
+saveas(gcf, "Manhattan.jpg");
+imwrite()

@@ -3,7 +3,7 @@ close all;
 close all hidden;
 
 Scenario = uavScenario;
-stltri = stlread("with_ground_manhattan2_1.stl");
+stltri = stlread("manhattan.stl");
 addMesh(Scenario,"custom",{stltri.Points stltri.ConnectivityList},[0.6350 0.0780 0.1840]);
 ax = show3D(Scenario);
 % Define the total simulation time in seconds
@@ -13,12 +13,13 @@ simTime = 240;
 updateRate = 10;
 
 % Define parameters for snake path
-num_points = 700; % Number of points to represent the snake path
+num_points = 1000; % Number of points to represent the snake path
 frequency = pi/4; % Frequency of the sinusoidal curve
-amplitude = 180; % Amplitude of the sinusoidal curve
 z_value = 100; % Constant value for the Z dimension
 length = ax.XLim(2);
 width = ax.YLim(2);
+
+amplitude = floor(width / 2); % Amplitude of the sinusoidal curve
 
 % Initialize variables
 snake_path = zeros(num_points, 3); % Transposed to 1000x3
