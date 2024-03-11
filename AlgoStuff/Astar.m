@@ -1,3 +1,8 @@
+
+% CHANGE THIS VALUE as neede for a custum maximum height
+height = 20;
+
+
 disp("A* in progress...")
 % Define your planner and other necessary objects
 ss = stateSpaceSE2;
@@ -13,8 +18,57 @@ goalPose = [550 100 -pi/2];
 % Plan the path
 [refpath] = plan(planner,startPose,goalPose);
 
-% Extract x and y coordinates from the reference path and store them in a 2D matrix
-AStarPath= [refpath.States(:,1), refpath.States(:,2)];
+
+
+
+% ================== Creating the z dimention - Start ==================
+xLength = size(refpath.States, 1);
+
+% zLength is 7 percent of xLength, the length of A*'s path.
+zLength = round(xLength * 0.07);
+
+% Generate Zlength incrementing doubles, evenly spaced that are between 0 and height
+start = linspace(0, height, zLength);
+
+% Inverse the start
+tail = fliplr(start); % this is when the path starts descending.
+
+% Create a variable called body that stores (xLength - 2*(zLength)) elements of value height.
+bodyLength = xLength - 2*zLength;
+body = ones(bodyLength, 1) * height;
+
+% Concatenate start, body, and tail becomes the z dimention
+zElements = [start, body', tail];
+% ================== Creating the z dimention - end ==================
+
+
+% Extract x and y coordinates from the reference path and  the z dimention and store them in a 3D matrix
+AStarPath = [refpath.States(:,1), refpath.States(:,2), zElements'];
+
+
+% Plot AStarPath -- start --- this section is for testing purposes only.
+figure;
+plot3(AStarPath(:,1), AStarPath(:,2), AStarPath(:,3), 'b-', 'LineWidth', 2);
+xlabel('X');
+ylabel('Y');
+zlabel('Z');
+title('Custum A* path');
+grid on;
+axis equal;
+% ploting path --- testing end
+
+
 
 disp("A* completed!")
+
+
+% clear workspace vars, vars not needed
+clear zElements;
+clear body;
+clear bodyLength;
+clear tail;
+clear start;
+clear zLength;
+clear xLength;
+clear height;
 
