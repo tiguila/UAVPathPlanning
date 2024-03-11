@@ -1,3 +1,4 @@
+VariableConfig;
 TwoDroneSTLtoOMap;
 ThreeDto2DOmap;
 clean;
