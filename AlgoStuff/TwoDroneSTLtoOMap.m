@@ -1,3 +1,4 @@
+disp('Two drones STL to Occupancy map in progress...')
 % Close any open or hidden figures to avoid clutter
 close all;
 close all hidden;
@@ -161,7 +162,7 @@ end
 toc
 
 % Display completion message
-disp('ended')
+disp('Two drones STL to Occupancy map completed!')
 
 figure
 show(map3D)

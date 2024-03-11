@@ -1,3 +1,5 @@
+disp('3D to 2D Occupancy map in progress...')
+
 % Create arrays for the x, y, and z coordinates of the waypoints (forming a grid)
 x = 0:600;
 y = 0:450;
@@ -23,4 +25,5 @@ binaryData = occupancyMatrix(map2D);
 regularData = ~binaryData;
 imshow(regularData, 'InitialMagnification', 'fit');
 imwrite(regularData, "Manhattan.jpg");
-"ThreeDto2DOmap Finished"
+disp("ThreeDto2DOmap Finished");
+disp('3D to 2D Occupancy map completed!')
