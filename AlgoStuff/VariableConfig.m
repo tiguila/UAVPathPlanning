@@ -8,7 +8,7 @@ AzimuthLimits = [-179 179];
 ElevationLimits = [-15 15];
 
 %Global and UAV related settings
-Gravity = 9.80665 ; %m^2/s
+Gravity = 9.8 ; %m^2/s
 UAVSampleTime = 0.001;
 DroneMass = 0.1;
 

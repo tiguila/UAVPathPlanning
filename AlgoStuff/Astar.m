@@ -9,7 +9,7 @@ ss = stateSpaceSE2;
 ss.StateBounds = [map2D.XWorldLimits; map2D.YWorldLimits; [-pi pi]];
 sv = validatorOccupancyMap(ss);
 sv.Map = map2D;
-planner = plannerHybridAStar(sv, MinTurningRadius=4, MotionPrimitiveLength=6);
+planner = plannerHybridAStar(sv, MinTurningRadius=4, MotionPrimitiveLength=6,InterpolationDistance=15);
 
 % Define start and goal poses
 startPose = [50 350 pi/2]; % [meters, meters, radians]
@@ -43,19 +43,11 @@ zElements = [start, body', tail];
 
 
 % Extract x and y coordinates from the reference path and  the z dimention and store them in a 3D matrix
-AStarPath = [refpath.States(:,1), refpath.States(:,2), zElements'];
+
+AStarPath = [refpath.States(:,2), refpath.States(:,1), zElements'*-1];
 
 
-% Plot AStarPath -- start --- this section is for testing purposes only.
-figure;
-plot3(AStarPath(:,1), AStarPath(:,2), AStarPath(:,3), 'b-', 'LineWidth', 2);
-xlabel('X');
-ylabel('Y');
-zlabel('Z');
-title('Custum A* path');
-grid on;
-axis equal;
-% ploting path --- testing end
+
 
 
 

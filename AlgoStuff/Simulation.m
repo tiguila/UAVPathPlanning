@@ -22,7 +22,7 @@ orientation_vec = repmat(orientation_quat,num_points,1);
 plat = uavPlatform("UAV",Scenario,"Trajectory",trajectory,"ReferenceFrame","ENU");
 
 % Update the visual representation of the first UAV to a quadrotor model
-updateMesh(plat,"quadrotor",{4},[1 0 0],eye(4));
+updateMesh(plat,"quadrotor",{.5},[1 1 1],eye(4));
 
 % Define the lidar sensor parameters for the first UAV
 lidarmodel = uavLidarPointCloudGenerator("AzimuthResolution",0.6, ...
