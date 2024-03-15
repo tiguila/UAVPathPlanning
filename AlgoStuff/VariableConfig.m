@@ -11,7 +11,7 @@ ElevationLimits = [-15 15];
 Gravity = 9.80665 ; %m^2/s
 UAVSampleTime = 0.001;
 DroneMass = 0.1;
-InitialPosition; % Vector 
+
 
 %What special math magic is this-------------------------------------------
 % Proportional Gains
