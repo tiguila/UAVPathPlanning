@@ -72,8 +72,8 @@ lidar = uavSensor("Lidar",plat,lidarmodel,"MountingLocation",[0 0 -1],"MountingA
 [ax, plotFrames] = show3D(Scenario);
 
 % Set axis limits for the visualization
-xlim([-15 3100]);
-ylim([-15 2600]);
+xlim([0 length]);
+ylim([0 width]);
 zlim([0 110]);
 
 % Set the viewing angle for the visualization
@@ -143,8 +143,8 @@ while Scenario.IsRunning && counter < 10000
         % Update 3D visualization with current simulation state and combined point cloud
         figure(1)
         show3D(Scenario,"Time",lidarSampleTime,"FastUpdate",true,"Parent",ax);
-        xlim([0 3100]);
-        ylim([0 2500]);
+        xlim([0 length]);
+        ylim([0 width]);
         zlim([0 110]);
         view([-110 20]);
         refreshdata
