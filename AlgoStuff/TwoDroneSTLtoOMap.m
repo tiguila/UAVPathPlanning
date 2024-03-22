@@ -164,6 +164,6 @@ toc
 % Display completion message
 disp('Two drones STL to Occupancy map completed!')
 
-figure
-show(map3D)
+%figure
+%show(map3D)
 

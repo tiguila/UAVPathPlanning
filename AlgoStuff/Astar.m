@@ -9,6 +9,7 @@ planner = plannerHybridAStar(sv, MinTurningRadius=4, MotionPrimitiveLength=6,Int
 % Define start and goal poses
 startPose = [50 350 pi/2]; % [meters, meters, radians]
 goalPose = [550 100 -pi/2];
+InitialPosition = [350 50 0]; % [y x z]
 
 % Plan the path
 [refpath] = plan(planner,startPose,goalPose);
