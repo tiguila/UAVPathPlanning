@@ -17,10 +17,10 @@ for Ix = x
 end
 
 % Visualize the 2D and 3D occupancy maps
-figure
-show(map2D)
-axis off;
-set(gcf, "Name", '');
+%figure
+%show(map2D)
+%axis off;
+%set(gcf, "Name", '');
 binaryData = occupancyMatrix(map2D);
 regularData = ~binaryData;
 imshow(regularData, 'InitialMagnification', 'fit');
