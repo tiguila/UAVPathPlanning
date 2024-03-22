@@ -12,6 +12,8 @@ Gravity = 9.8 ; %m^2/s
 UAVSampleTime = 0.001;
 DroneMass = 0.1;
 
+% CHANGE THIS VALUE as neede for a custum maximum height
+height = 20;
 
 %What special math magic is this-------------------------------------------
 % Proportional Gains

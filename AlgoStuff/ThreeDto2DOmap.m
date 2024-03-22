@@ -9,7 +9,7 @@ map2D = binaryOccupancyMap(600,450);
 for Ix = x
     for Iy = y
         % Check if the corresponding point in 3D map is occupied
-        if checkOccupancy(map3D,[Ix Iy 10])
+        if checkOccupancy(map3D,[Ix Iy height])
             % Set the corresponding point in 2D map to occupied
             setOccupancy(map2D, [Ix Iy],1)
         end

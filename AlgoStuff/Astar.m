@@ -1,8 +1,3 @@
-
-% CHANGE THIS VALUE as neede for a custum maximum height
-height = 20;
-
-
 disp("A* in progress...")
 % Define your planner and other necessary objects
 ss = stateSpaceSE2;
@@ -17,9 +12,6 @@ goalPose = [550 100 -pi/2];
 
 % Plan the path
 [refpath] = plan(planner,startPose,goalPose);
-
-
-
 
 % ================== Creating the z dimention - Start ==================
 xLength = size(refpath.States, 1);
@@ -45,11 +37,6 @@ zElements = [start, body', tail];
 % Extract x and y coordinates from the reference path and  the z dimention and store them in a 3D matrix
 
 AStarPath = [refpath.States(:,2), refpath.States(:,1), zElements'*-1];
-
-
-
-
-
 
 disp("A* completed!")
 
