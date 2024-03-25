@@ -1,3 +1,5 @@
+disp("Simulation Starting")
+
 Scenario = uavScenario;
 stltri = stlread("./wall.stl");
 addMesh(Scenario,"custom",{stltri.Points stltri.ConnectivityList},[0.6350 0.0780 0.1840]);
@@ -69,6 +71,7 @@ UAVSampleTime = 0.001;
 Gravity = 9.81;
 DroneMass = 0.1; 
 
+disp("Sim Active")
 out = sim("DroneProto.slx");
 
 hold on

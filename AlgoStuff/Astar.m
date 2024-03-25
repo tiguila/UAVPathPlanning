@@ -42,13 +42,4 @@ AStarPath = [refpath.States(:,2), refpath.States(:,1), zElements'*-1];
 disp("A* completed!")
 
 
-% clear workspace vars, vars not needed
-clear zElements;
-clear body;
-clear bodyLength;
-clear tail;
-clear start;
-clear zLength;
-clear xLength;
-clear height;
 
