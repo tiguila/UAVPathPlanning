@@ -6,5 +6,5 @@ ThreeDto2DOmap;
 Astar;
 Simulation;
 
-open_system("DroneProto.slx")
+%open_system("DroneProto.slx")
 "Full suite processed."

@@ -1,5 +1,5 @@
 Scenario = uavScenario;
-stltri = stlread(map);
+stltri = stlread("./wall.stl");
 addMesh(Scenario,"custom",{stltri.Points stltri.ConnectivityList},[0.6350 0.0780 0.1840]);
 ax = show3D(Scenario);
 % Define the total simulation time in seconds
@@ -22,7 +22,7 @@ orientation_vec = repmat(orientation_quat,num_points,1);
 plat = uavPlatform("UAV",Scenario,"Trajectory",trajectory,"ReferenceFrame","ENU");
 
 % Update the visual representation of the first UAV to a quadrotor model
-updateMesh(plat,"quadrotor",{1.2},[1 1 1],eye(4));
+updateMesh(plat,"quadrotor",{.1},[1 1 1],eye(4));
 
 % Define the lidar sensor parameters for the first UAV
 lidarmodel = uavLidarPointCloudGenerator("UpdateRate",10, ...
@@ -46,19 +46,19 @@ hold on
 
 
 % Proportional Gains
-Px = 10;
-Py = 10;
-Pz = 10.5;
+Px =91;
+Py = 91;
+Pz = 91;
 
 % Derivative Gains
-Dx = 5;
-Dy = 5;
-Dz = 7.5;
+Dx = 26;
+Dy = 26;
+Dz = 26;
 
 % Integral Gains
-Ix = 15;
-Iy = 15;
-Iz = 15;
+Ix = 82;
+Iy = 82;
+Iz = 82;
 
 % Filter Coefficients
 Nx = 10;

@@ -17,21 +17,16 @@ height = 20;
 
 %What special math magic is this-------------------------------------------
 % Proportional Gains
-Px = 6;
-Py = 6;
-Pz = 6.5;
+Px = 10;
+Py = 10;
+Pz = 10.5;
 
 % Derivative Gains
-Dx = 1.5;
-Dy = 1.5;
-Dz = 2.5;
+Dx = 5;
+Dy = 5;
+Dz = 7.5;
 
 % Integral Gains
-Ix = 0;
-Iy = 0;
-Iz = 0;
-
-% Filter Coefficients
-Nx = 10;
-Ny = 10;
-Nz = 14.4947065605712; 
+Ix = 15;
+Iy = 15;
+Iz = 15;
