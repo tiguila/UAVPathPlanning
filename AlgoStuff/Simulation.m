@@ -22,15 +22,59 @@ orientation_vec = repmat(orientation_quat,num_points,1);
 plat = uavPlatform("UAV",Scenario,"Trajectory",trajectory,"ReferenceFrame","ENU");
 
 % Update the visual representation of the first UAV to a quadrotor model
-updateMesh(plat,"quadrotor",{.5},[1 1 1],eye(4));
+updateMesh(plat,"quadrotor",{1.2},[1 1 1],eye(4));
 
 % Define the lidar sensor parameters for the first UAV
-lidarmodel = uavLidarPointCloudGenerator("AzimuthResolution",0.6, ...
-    "ElevationLimits",[-90 -20],"ElevationResolution",2.5, ...
-    "MaxRange",200,"UpdateRate",2,"HasOrganizedOutput",true);
-
+lidarmodel = uavLidarPointCloudGenerator("UpdateRate",10, ...
+                                         "MaxRange",9, ...
+                                         "RangeAccuracy",3, ...
+                                         "AzimuthResolution",AzimuthResolution, ...
+                                         "ElevationResolution",ElevationResolution, ...
+                                         "AzimuthLimits",AzimuthLimits, ...
+                                         "ElevationLimits",ElevationLimits, ...                                       
+                                         "HasOrganizedOutput",true);
 % Create a uavSensor object representing the lidar sensor attached to the first UAV
-lidar = uavSensor("Lidar",plat,lidarmodel,"MountingLocation",[0 0 -1],"MountingAngles",[0 0 0]);
+lidar = uavSensor("Lidar",plat,lidarmodel,"MountingLocation",[0 0 -0.4],"MountingAngles",[0 0 180]);
 
 % Create an axis and visualization elements for displaying the 3D environment
 [ax, plotFrames] = show3D(Scenario);
+
+InitialPosition = [350 50 -10]; 
+
+show3D(Scenario);
+hold on
+
+
+% Proportional Gains
+Px = 10;
+Py = 10;
+Pz = 10.5;
+
+% Derivative Gains
+Dx = 5;
+Dy = 5;
+Dz = 7.5;
+
+% Integral Gains
+Ix = 15;
+Iy = 15;
+Iz = 15;
+
+% Filter Coefficients
+Nx = 10;
+Ny = 10;
+Nz = 14.4947065605712;
+
+UAVSampleTime = 0.001;
+Gravity = 9.81;
+DroneMass = 0.1; 
+
+out = sim("DroneProto.slx");
+
+hold on
+points = squeeze(out.trajectoryPoints(1,:,:))';
+plot3(points(:,2),points(:,1),-points(:,3),"-r");
+plot3([InitialPosition(1,2); AStarPath(:,2)],[InitialPosition(1,1); AStarPath(:,1)],[-InitialPosition(1,3); -AStarPath(:,3)],"-g")
+
+    
+

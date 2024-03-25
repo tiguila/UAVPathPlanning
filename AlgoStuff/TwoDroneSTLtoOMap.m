@@ -161,6 +161,8 @@ while Scenario.IsRunning && counter < 10000
 end
 toc
 
+inflate(map3D,5)
+
 % Display completion message
 disp('Two drones STL to Occupancy map completed!')
 
