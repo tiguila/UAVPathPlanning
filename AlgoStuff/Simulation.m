@@ -46,10 +46,13 @@ InitialPosition = [350 50 -10];
 show3D(Scenario);
 hold on
 
-% Proportional Gains
-Px = 91; % x : 0.5[]91
-Py = 91;
-Pz = 91;
+%% Proportional gains
+% Valid range	[0.5, 91]
+% Higher P gains typically result in faster response but may lead to oscillations or instability if too high.
+%%
+Px = 6.8;
+Py = 6.8;
+Pz = 6.8;
 
 % Derivative Gains
 Dx = 26;
