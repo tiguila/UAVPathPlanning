@@ -1,7 +1,7 @@
 disp("Simulation Starting")
 
 Scenario = uavScenario;
-stltri = stlread(map);
+stltri = stlread("walls20.stl");
 addMesh(Scenario,"custom",{stltri.Points stltri.ConnectivityList},[0.6350 0.0780 0.1840]);
 ax = show3D(Scenario);
 % Define the total simulation time in seconds
@@ -36,12 +36,12 @@ lidarmodel = uavLidarPointCloudGenerator("UpdateRate",10, ...
                                          "ElevationLimits",ElevationLimits, ...                                       
                                          "HasOrganizedOutput",true);
 % Create a uavSensor object representing the lidar sensor attached to the first UAV
-lidar = uavSensor("Lidar",plat,lidarmodel,"MountingLocation",[0 0 -0.4],"MountingAngles",[0 0 180]);
+lidar = uavSensor("Lidar",plat,lidarmodel,"MountingLocation",[0 0 -0.4],"MountingAngles",[0 0 0]);
 
 % Create an axis and visualization elements for displaying the 3D environment
 [ax, plotFrames] = show3D(Scenario);
 
-InitialPosition = [350 50 -10]; 
+InitialPosition = [350 50 -1]; 
 
 show3D(Scenario);
 hold on
@@ -50,18 +50,18 @@ hold on
 % Valid range	[0.5, 91]
 % Higher P gains typically result in faster response but may lead to oscillations or instability if too high.
 %%
-Px = 6.8;
-Py = 6.8;
-Pz = 6.8;
+Px = 91;
+Py = 91;
+Pz = 91;
 
 %% Integral Gains
 % Valid range	[0.0.1, 82]
 % It helps eliminate steady-state error by integrating the error over time. It's useful for correcting long-term
 % errors that may not be addressed by P and D gains alone. However, too high I gains can lead to instability/oscillations.
 %%
-Ix = 0;
-Iy = 0;
-Iz = 0;
+Ix = 82;
+Iy = 82;
+Iz = 82;
 
 
 %% Derivative Gains
@@ -69,9 +69,9 @@ Iz = 0;
 % It helps reduce oscillations and improve stability. It acts on the rate of change of the error signal. Too
 % high D gains can lead to a sluggish response, while too low can result in oscillations.
 %%
-Dx = 2.5;
-Dy = 2.5;
-Dz = 2.5;
+Dx = 26;
+Dy = 26;
+Dz = 26;
 
 % Filter Coefficients
 Nx = 14.4947065605712;
