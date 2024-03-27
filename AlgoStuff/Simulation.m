@@ -1,7 +1,7 @@
 disp("Simulation Starting")
 
 Scenario = uavScenario;
-stltri = stlread("./wall.stl");
+stltri = stlread(map);
 addMesh(Scenario,"custom",{stltri.Points stltri.ConnectivityList},[0.6350 0.0780 0.1840]);
 ax = show3D(Scenario);
 % Define the total simulation time in seconds
