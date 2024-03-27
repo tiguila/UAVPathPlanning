@@ -1,4 +1,4 @@
-map = ".\custumManhattan.stl";
+map = ".\Maps\manhattan.stl";
 
 VariableConfig;
 TwoDroneSTLtoOMap;
