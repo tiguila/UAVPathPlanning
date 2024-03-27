@@ -32,7 +32,7 @@ zElements = [start, body', tail];
 
 % Extract x and y coordinates from the reference path and  the z dimention and store them in a 3D matrix
 
-AStarPath = [refpath.States(:,2), refpath.States(:,1), -zElements'];
+AStarPath = [refpath.States(:,2), refpath.States(:,1), zElements'*-1];
 
 disp("A* completed!")
 
