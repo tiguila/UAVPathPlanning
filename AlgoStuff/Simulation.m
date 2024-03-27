@@ -62,16 +62,20 @@ Pz = 6.8;
 Ix = 0;
 Iy = 0;
 Iz = 0;
-% Derivative Gains
-Dx = 26;
-Dy = 26;
-Dz = 26;
 
 
+%% Derivative Gains
+% Valid range	[0.1, 26] 
+% It helps reduce oscillations and improve stability. It acts on the rate of change of the error signal. Too
+% high D gains can lead to a sluggish response, while too low can result in oscillations.
+%%
+Dx = 2.5;
+Dy = 2.5;
+Dz = 2.5;
 
 % Filter Coefficients
-Nx = 10;
-Ny = 10;
+Nx = 14.4947065605712;
+Ny = 14.4947065605712;
 Nz = 14.4947065605712;
 
 UAVSampleTime = 0.001;
