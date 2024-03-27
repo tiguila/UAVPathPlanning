@@ -54,15 +54,20 @@ Px = 6.8;
 Py = 6.8;
 Pz = 6.8;
 
+%% Integral Gains
+% Valid range	[0.0.1, 82]
+% It helps eliminate steady-state error by integrating the error over time. It's useful for correcting long-term
+% errors that may not be addressed by P and D gains alone. However, too high I gains can lead to instability/oscillations.
+%%
+Ix = 0;
+Iy = 0;
+Iz = 0;
 % Derivative Gains
 Dx = 26;
 Dy = 26;
 Dz = 26;
 
-% Integral Gains
-Ix = 82;
-Iy = 82;
-Iz = 82;
+
 
 % Filter Coefficients
 Nx = 10;
