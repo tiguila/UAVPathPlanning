@@ -7,4 +7,4 @@ Astar;
 Simulation;
 
 %open_system("DroneProto.slx")
-"Full suite processed."
+disp("Full suite processed.")

@@ -48,7 +48,7 @@ hold on
 
 
 % Proportional Gains
-Px =91;
+Px = 91;
 Py = 91;
 Pz = 91;
 
