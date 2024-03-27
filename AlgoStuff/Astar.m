@@ -6,11 +6,6 @@ sv = validatorOccupancyMap(ss);
 sv.Map = map2D;
 planner = plannerHybridAStar(sv, MinTurningRadius=4, MotionPrimitiveLength=6,InterpolationDistance=15);
 
-% Define start and goal poses
-startPose = [50 350 pi/2]; % [meters, meters, radians]
-goalPose = [550 100 -pi/2];
-InitialPosition = [350 50 0]; % [y x z]
-
 % Plan the path
 [refpath] = plan(planner,startPose,goalPose);
 

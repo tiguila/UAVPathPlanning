@@ -12,8 +12,14 @@ Gravity = 9.8 ; %m^2/s
 UAVSampleTime = 0.001;
 DroneMass = 0.1;
 
-% CHANGE THIS VALUE as neede for a custum maximum height
-height = 20;
+% CHANGE THESE VALUE
+height = 20; 
+%Start position of Drone
+startPose = [50 350 pi/2]; % [meters, meters, radians]
+%Ending position of Drone
+goalPose = [550 100 -pi/2];
+%Initial position of Drone
+InitialPosition = [350 50 0]; % [y x z]
 
 %What special math magic is this-------------------------------------------
 % Proportional Gains
