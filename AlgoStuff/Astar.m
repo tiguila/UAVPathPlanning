@@ -1,10 +1,42 @@
+%% Create an optimal path from  A-B using the built in Hybrid A* function from MATLAB.
+
 disp("A* in progress...")
-% Define your planner and other necessary objects
+height = 10;
+
+% Save the 2D occupancy map using the following one line:
+%save('occupancy_map.mat', 'map2D');
+
+
+
+% True means you are loading saved occupancy map data.
+flag =  true;
+
+
+if flag
+    % load saved data
+    path = 'Data/map1_0.mat';
+    occupancyMap = load(path).map2D;
+else
+
+    % load new occupancy map data
+    occupancyMap = map2D;
+end
+
+
+
+% Define the start and destination points for the A*
+startPose = [50,350,1.570796326794897];
+goalPose = [550,100,-1.570796326794897];
+
+
+
+% Preparing the environment for the A* algorithm; Defining the planner and other necessary objects
 ss = stateSpaceSE2;
-ss.StateBounds = [map2D.XWorldLimits; map2D.YWorldLimits; [-pi pi]];
+ss.StateBounds = [occupancyMap.XWorldLimits; occupancyMap.YWorldLimits; [-pi pi]];
 sv = validatorOccupancyMap(ss);
-sv.Map = map2D;
+sv.Map = occupancyMap;
 planner = plannerHybridAStar(sv, MinTurningRadius=4, MotionPrimitiveLength=6,InterpolationDistance=15);
+
 
 % Plan the path
 [refpath] = plan(planner,startPose,goalPose);
@@ -34,7 +66,25 @@ zElements = [start, body', tail];
 
 AStarPath = [refpath.States(:,2), refpath.States(:,1), zElements'*-1];
 
+
 disp("A* completed!")
 
-
+% Clear not required variables from workspace
+clear occupancyMap;
+clear planner;
+clear refpath;
+clear tail;
+clear xLength;
+clear zElements;
+clear zLength;
+clear body;
+clear bodyLength;
+clear height;
+clear ss;
+clear start;
+clear startPose;
+clear goalPose;
+clear sv;
+clear path;
+clear flag;
 
