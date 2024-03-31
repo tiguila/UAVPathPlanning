@@ -1,34 +1,18 @@
 %% Create an optimal path from  A-B using the built in Hybrid A* function from MATLAB.
 
 disp("A* in progress...")
-height = 10;
 
 % Save the 2D occupancy map using the following one line:
 %save('occupancy_map.mat', 'map2D');
 
-
-
-% True means you are loading saved occupancy map data.
-flag =  true;
-
-
-if flag
+if reuse && isfile(targetRecurr)
     % load saved data
-    path = 'Data/map1_0.mat';
+    path = targetRecurr;
     occupancyMap = load(path).map2D;
 else
-
     % load new occupancy map data
     occupancyMap = map2D;
 end
-
-
-
-% Define the start and destination points for the A*
-startPose = [50,350,1.570796326794897];
-goalPose = [550,100,-1.570796326794897];
-
-
 
 % Preparing the environment for the A* algorithm; Defining the planner and other necessary objects
 ss = stateSpaceSE2;

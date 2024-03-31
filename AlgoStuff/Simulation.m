@@ -1,7 +1,11 @@
 disp("Simulation Starting")
 
 Scenario = uavScenario;
-stltri = stlread("walls20.stl");
+if (enableObstacles)
+    stltri = stlread(mapObsticales);
+else
+    stltri = stlread(map);
+end
 addMesh(Scenario,"custom",{stltri.Points stltri.ConnectivityList},[0.6350 0.0780 0.1840]);
 ax = show3D(Scenario);
 % Define the total simulation time in seconds
@@ -9,7 +13,6 @@ simTime = 240;
 
 % Set the update rate for the simulation in Hz
 updateRate = 10;
-
 
 % Define the initial Euler angles for the UAV's orientation (0 degrees in all directions)
 orientation_eul = [0 0 0];
@@ -41,7 +44,7 @@ lidar = uavSensor("Lidar",plat,lidarmodel,"MountingLocation",[0 0 -0.4],"Mountin
 % Create an axis and visualization elements for displaying the 3D environment
 [ax, plotFrames] = show3D(Scenario);
 
-InitialPosition = [350 50 -1]; 
+%InitialPosition = [350 50 -1]; 
 
 show3D(Scenario);
 hold on
@@ -87,7 +90,7 @@ out = sim("DroneProto.slx");
 
 hold on
 points = squeeze(out.trajectoryPoints(1,:,:))'; %This list
-plot3(points(:,2),points(:,1),-points(:,3),"-r");
+plot3(points(:,2),points(:,1),-points(:,3),"-b");
 plot3([InitialPosition(1,2); AStarPath(:,2)],[InitialPosition(1,1); AStarPath(:,1)],[-InitialPosition(1,3); -AStarPath(:,3)],"-g")
 
 

@@ -1,4 +1,6 @@
-map = ".\manhattan.stl";
+map = ".\Maps\manhattan.stl";
+mapObsticales = ".\Maps\walls20.stl";
+reuse = false;
 
 VariableConfig;
 TwoDroneSTLtoOMap;

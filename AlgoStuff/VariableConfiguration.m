@@ -2,13 +2,17 @@
 
 
 %Lidar Resolution Section
-AzimuthResolution = 0.3324099;
-ElevationResolution = 1.25;
+
+AzimuthResolution = 0.5;
+ElevationResolution = 2;
+%Why change?
+%AzimuthResolution = 0.3324099;
+%ElevationResolution = 1.25;
 
 %Lidar Range
-MaxRange = 7;
-AzimuthLimits = [-179 179];
-ElevationLimits = [-20 20];
+MaxRange = 9;
+AzimuthLimits = [-45 45];
+ElevationLimits = [-15 15];
 
 %Global and UAV related settings
 Gravity = 9.8 ; %m^2/s
@@ -23,9 +27,9 @@ startPose = [50 350 pi/2]; % [meters, meters, radians]
 goalPose = [550 100 -pi/2];
 %Initial position of Drone
 InitialPosition = [350 50 0]; % [y x z]
-
-
-
+%% Recurring Map target
+targetRecurr = 'Data/map1_0.mat';
+%%
 
 
 % ==== Start - from twodronesstltoOMap.m
