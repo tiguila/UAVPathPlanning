@@ -29,6 +29,15 @@ plat = uavPlatform("UAV",Scenario,"Trajectory",trajectory,"ReferenceFrame","ENU"
 % Update the visual representation of the first UAV to a quadrotor model
 updateMesh(plat,"quadrotor",{.1},[1 1 1],eye(4));
 
+% Create the dynamic objects
+dynamicObjects = dynamicObject(simTime, Scenario);
+dynamicObj1 = dynamicObjects{1};
+dynamicObj2 = dynamicObjects{2};
+
+% Add the dynamic objects to the scene
+updateMesh(dynamicObj1, "fixedwing", {2},  [1 0 0], eye(4));
+updateMesh(dynamicObj2, "fixedwing", {3.5},  [1 0 0], eye(4));
+
 % Define the lidar sensor parameters for the first UAV
 lidarmodel = uavLidarPointCloudGenerator("UpdateRate",10, ...
                                          "MaxRange",9, ...
