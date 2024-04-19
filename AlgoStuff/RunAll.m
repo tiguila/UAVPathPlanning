@@ -1,6 +1,18 @@
+map = ".\Maps\manhattan.stl";
+mapObsticales = ".\Maps\walls20.stl";
+%% Recurring Map target
+targetRecurr = '.\Data\map1_0.mat';
+%%
+%% Obstacles
+enableObstacles = true;
+%%
+reuse = false;
+
 VariableConfig;
 TwoDroneSTLtoOMap;
 ThreeDto2DOmap;
 Astar;
 Simulation;
-"Full suite processed."
+
+%open_system("DroneProto.slx")
+disp("Full suite processed.")

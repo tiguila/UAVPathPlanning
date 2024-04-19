@@ -4,7 +4,7 @@ close all;
 close all hidden;
 
 Scenario = uavScenario;
-stltri = stlread("manhattan.stl");
+stltri = stlread(map);
 addMesh(Scenario,"custom",{stltri.Points stltri.ConnectivityList},[0.6350 0.0780 0.1840]);
 ax = show3D(Scenario);
 % Define the total simulation time in seconds
@@ -141,14 +141,14 @@ while Scenario.IsRunning && counter < 10000
         insertPointCloud(map3D,[sensorPose(1:3,4)' tform2quat(sensorPose)],ptOut{ptIdx},500);
 
         % Update 3D visualization with current simulation state and combined point cloud
-        figure(1)
-        show3D(Scenario,"Time",lidarSampleTime,"FastUpdate",true,"Parent",ax);
-        xlim([0 length]);
-        ylim([0 width]);
-        zlim([0 110]);
-        view([-110 20]);
-        refreshdata
-        drawnow limitrate
+        %figure(1)
+        %show3D(Scenario,"Time",lidarSampleTime,"FastUpdate",true,"Parent",ax);
+        %xlim([0 length]);
+        %ylim([0 width]);
+        %zlim([0 110]);
+        %view([-110 20]);
+        %refreshdata;
+        % drawnow limitrate;
 
     end
 
@@ -161,9 +161,11 @@ while Scenario.IsRunning && counter < 10000
 end
 toc
 
+inflate(map3D,5)
+
 % Display completion message
 disp('Two drones STL to Occupancy map completed!')
 
-figure
-show(map3D)
+%figure
+%show(map3D)
 

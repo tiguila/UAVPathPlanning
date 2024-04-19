@@ -1,38 +1,45 @@
 % This script initializes workspace variables for the UAV Toolbox Reference
 % Application.
 
-% Set guidance type to Full Guidance
-guidanceType = 1;
+% Set guidance type to Obstacle Avoidance
+guidanceType = 2;
 
 % Configure the drone as a Multicopter
 isDroneMulticopter = 1;
 
-% Do not use full photo realistic sim
-isPhotoRealisticSim = 0;
+% Use cuboid environment
+isPhotoRealisticSim = 1;
 
 % Low fidelity plant model 
 plantModelFi = 0;
 
-% No show for Lidar Point Cloud
-showLidarPointCloud = 0;
+% Show the Lidar Point Cloud
+showLidarPointCloud = 1;
 
 % No show the Video Viewer
 showVideoViewer = 0;
 
-% Show the UAV Animation as it flies
-showUAVAnimation = 1;
+% Do not show the UAV Animation as it flies
+showUAVAnimation = 0;
 
 % Use heading in the guidance model
 useHeading = 1;
 
-%Takeoff after 5 S
-startFlightTime = 5;
+%Takeoff after 0.5
+startFlightTime = 0.5;
 
 % Do not use QGroundControl
 useQGC = 0;
 
-% Simulation Stop Time
-simTime = 250;
+% No Pacing
+load_system('uavPackageDelivery');
+set_param('uavPackageDelivery','EnablePacing', 'off');
 
-% New Obstacle Avoidance
-isNewOA = 0;
+% Simulation Stop Time
+simTime = 78;
+
+%Show the CPA Scope
+open_system('uavPackageDelivery/On Board Computer/DataProcessing/ProcessSensorData/CPA');
+
+% Done
+disp ('Project configured to simulate in a cuboid environment with obstacle avoidance');
