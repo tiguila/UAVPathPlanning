@@ -28,7 +28,9 @@ goalPose = [550 100 -pi/2];
 %Initial position of Drone
 InitialPosition = [350 50 0]; % [y x z]
 
-
+% Create the drone path (optimal path)
+OptimalPath = Astar(startPose, goalPose);
+AStarPath = [OptimalPath(:,2), OptimalPath(:,1), OptimalPath(:,3)*-1];
 
 % ==== Start - from twodronesstltoOMap.m
 Scenario = uavScenario;

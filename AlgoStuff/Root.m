@@ -7,6 +7,9 @@ mapObsticales = ".\Maps\walls20.stl";
 targetRecurr = '.\Data\map1_0.mat';
 %%
 
+% Enable static obstacles in the environment (use a modified map)
+enableObstacles = true;
+
 reuse = true;
 num_points = 1000; % Number of points to represent the snake path
 
