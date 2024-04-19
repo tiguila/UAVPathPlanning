@@ -6,9 +6,6 @@ mapObsticales = ".\Maps\walls20.stl";
 %% Recurring Map target
 targetRecurr = '.\Data\map1_0.mat';
 %%
-%% Obstacles
-enableObstacles = true;
-%%
 
 % Enable static obstacles in the environment (use a modified map)
 enableObstacles = true;

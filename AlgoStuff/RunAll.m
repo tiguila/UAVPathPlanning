@@ -3,9 +3,6 @@ mapObsticales = ".\Maps\walls20.stl";
 %% Recurring Map target
 targetRecurr = '.\Data\map1_0.mat';
 %%
-%% Obstacles
-enableObstacles = true;
-%%
 reuse = false;
 
 VariableConfig;
