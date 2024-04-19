@@ -16,17 +16,19 @@ DroneMass = 0.1;
 height = 10; 
 %Start position of Drone
 startPose = [50 350 pi/2]; % [meters, meters, radians]
-%[5 5 pi/2] for custumManhattan
+%[5 5 pi/2] for custumManhattan.stl
+%[50 350 pi/2] for manhattan.stl
 
 %Ending position of Drone
 goalPose = [550 100 -pi/2];
-%[90 90 -pi/2] for custumManhattan
+%[90 90 -pi/2] for custumManhattan.stl
+%[550 100 -pi/2] for manhattan.stl
 
 %Initial position of Drone
 InitialPosition = [350 50 -2]; % [y x z]
-%% Obstacles
-enableObstacles = true;
-%%
+%[5 5 -2] for custumManhattan.stl
+%[350 50 -2] for manhattan.stl
+
 
 %What special math magic is this-------------------------------------------
 %% Proportional gains
