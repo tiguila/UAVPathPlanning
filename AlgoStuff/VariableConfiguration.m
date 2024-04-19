@@ -26,7 +26,7 @@ startPose = [50 350 pi/2]; % [meters, meters, radians]
 %Ending position of Drone
 goalPose = [550 100 -pi/2];
 %Initial position of Drone
-InitialPosition = [350 50 0]; % [y x z]
+InitialPosition = [350 50 -1]; % [y x z]
 
 
 

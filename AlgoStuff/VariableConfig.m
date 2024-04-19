@@ -23,10 +23,7 @@ goalPose = [550 100 -pi/2];
 %[90 90 -pi/2] for custumManhattan
 
 %Initial position of Drone
-InitialPosition = [350 50 -2]; % [y x z]
-%% Obstacles
-enableObstacles = true;
-%%
+InitialPosition = [350 50 -1]; % [y x z]
 
 %What special math magic is this-------------------------------------------
 %% Proportional gains
