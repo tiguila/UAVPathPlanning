@@ -29,7 +29,8 @@ planner = plannerHybridAStar(sv, MinTurningRadius=4, MotionPrimitiveLength=6,Int
 xLength = size(refpath.States, 1);
 
 % zLength is 7 percent of xLength, the length of A*'s path.
-zLength = round(xLength * 0.07);
+% What if: its actually 10 percent?
+zLength = round(xLength * 0.1);%round(xLength * 0.07);
 
 % Generate Zlength incrementing doubles, evenly spaced that are between 0 and height
 start = linspace(0, height, zLength);
@@ -54,21 +55,21 @@ AStarPath = [refpath.States(:,2), refpath.States(:,1), zElements'*-1];
 disp("A* completed!")
 
 % Clear not required variables from workspace
-clear occupancyMap;
-clear planner;
-clear refpath;
-clear tail;
-clear xLength;
-clear zElements;
-clear zLength;
-clear body;
-clear bodyLength;
-clear height;
-clear ss;
-clear start;
-clear startPose;
-clear goalPose;
-clear sv;
-clear path;
-clear flag;
+%clear occupancyMap;
+%clear planner;
+%clear refpath;
+%clear tail;
+%clear xLength;
+%clear zElements;
+%clear zLength;
+%%clear body;
+%clear bodyLength;
+%clear height;
+%clear ss;
+%clear start;
+%clear startPose;
+%clear goalPose;
+%clear sv;
+%clear path;
+%clear flag;
 

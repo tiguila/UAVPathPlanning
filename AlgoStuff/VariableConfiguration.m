@@ -27,9 +27,7 @@ startPose = [50 350 pi/2]; % [meters, meters, radians]
 goalPose = [550 100 -pi/2];
 %Initial position of Drone
 InitialPosition = [350 50 0]; % [y x z]
-%% Recurring Map target
-targetRecurr = 'Data/map1_0.mat';
-%%
+
 
 
 % ==== Start - from twodronesstltoOMap.m
@@ -80,9 +78,6 @@ time = 0:(simTime/(num_points-1)):simTime;
 trajectory = waypointTrajectory("Waypoints",snake_path,"Orientation",orientation_vec, ...
     "SampleRate",updateRate,"ReferenceFrame","ENU","TimeOfArrival",time);
 % ====== end - from twoDronesstlToOMap
-
-
-
 
 
 %What special math magic is this-------------------------------------------

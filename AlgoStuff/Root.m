@@ -3,7 +3,11 @@
 % Your 3D STL map
 map = ".\Maps\manhattan.stl";
 mapObsticales = ".\Maps\walls20.stl";
-reuse = false;
+%% Recurring Map target
+targetRecurr = '.\Data\map1_0.mat';
+%%
+
+reuse = true;
 num_points = 1000; % Number of points to represent the snake path
 
 VariableConfiguration;
