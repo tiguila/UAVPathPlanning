@@ -35,8 +35,8 @@ dynamicObj1 = dynamicObjects{1};
 dynamicObj2 = dynamicObjects{2};
 
 % Add the dynamic objects to the scene
-updateMesh(dynamicObj1, "fixedwing", {5},  [1 0 0], eye(4));
-updateMesh(dynamicObj2, "fixedwing", {5},  [1 0 0], eye(4));
+updateMesh(dynamicObj1, "fixedwing", {2},  [1 0 0], eye(4));
+updateMesh(dynamicObj2, "fixedwing", {3.5},  [1 0 0], eye(4));
 
 % Define the lidar sensor parameters for the first UAV
 lidarmodel = uavLidarPointCloudGenerator("UpdateRate",10, ...
