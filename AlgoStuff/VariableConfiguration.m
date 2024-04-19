@@ -20,13 +20,13 @@ UAVSampleTime = 0.001;
 DroneMass = 0.1;
 
 % CHANGE THESE VALUE
-height = 20; 
+height = 10; 
 %Start position of Drone
 startPose = [50 350 pi/2]; % [meters, meters, radians]
 %Ending position of Drone
 goalPose = [550 100 -pi/2];
 %Initial position of Drone
-InitialPosition = [350 50 0]; % [y x z]
+InitialPosition = [350 50 -1]; % [y x z]
 
 % Create the drone path (optimal path)
 OptimalPath = Astar(startPose, goalPose);
@@ -83,17 +83,29 @@ trajectory = waypointTrajectory("Waypoints",snake_path,"Orientation",orientation
 
 
 %What special math magic is this-------------------------------------------
-% Proportional Gains
-Px = 10;
-Py = 10;
-Pz = 10.5;
+%% Proportional gains
+% Valid range	[0.5, 91]
+% Higher P gains typically result in faster response but may lead to oscillations or instability if too high.
+%%
+Px = 91;
+Py = 91;
+Pz = 91;
 
-% Derivative Gains
-Dx = 5;
-Dy = 5;
-Dz = 7.5;
+%% Integral Gains
+% Valid range	[0.0.1, 82]
+% It helps eliminate steady-state error by integrating the error over time. It's useful for correcting long-term
+% errors that may not be addressed by P and D gains alone. However, too high I gains can lead to instability/oscillations.
+%%
+Ix = 82;
+Iy = 82;
+Iz = 82;
 
-% Integral Gains
-Ix = 15;
-Iy = 15;
-Iz = 15;
+
+%% Derivative Gains
+% Valid range	[0.1, 26] 
+% It helps reduce oscillations and improve stability. It acts on the rate of change of the error signal. Too
+% high D gains can lead to a sluggish response, while too low can result in oscillations.
+%%
+Dx = 26;
+Dy = 26;
+Dz = 26;
