@@ -1,4 +1,5 @@
-# UAV package delivery for urban air mobility (UAM)
+
+# UAV package delivery for Urban Air Mobility (UAM)
 
 ## Introduction
 
@@ -10,7 +11,8 @@ This project focuses on simulating a package delivery system utilizing Unmanned 
 **Note:** You must have a license to use MATLAB or any products from MathWorks. See MathWorks page for toolboxes version compatible with newer versions of MATLAB/Simulink.
 
 1. **Technologies from MathWorks**
-   1.1. MATLAB R2023B 
+
+   1. MATLAB R2023B 
       - Aerospace Blockset version 6.0
       - Aerospace Toolbox version 4.4
       - Computer Vision Toolbox version 10.4
@@ -25,15 +27,16 @@ This project focuses on simulating a package delivery system utilizing Unmanned 
       - Simulink version 10.7
       - Simulink 3D Animation version 9.6
       - UAV Toolbox version 1.5
-   1.2. Simulink
+   2. Simulink
 2. Blender
 3. Python
+
 
 
 ## Setup
 
 ### Step 1: Save Maps
-Save your maps - with or without obstacles in STL format - under `UAVPathPlanning/Maps`.
+Save your maps - with or without obstacles in STL format - under `UAVPathPlanning/Maps`. **See `UAVPathPlanning/STLMaps` directory for more maps**.
 
 ### Step 2: Map Data Loading
 
@@ -56,8 +59,9 @@ Note: This step assumes you have completed Case 1 or you are using our testing d
 3. Repeat step 4 from Case 1, but make the changes in `VariableConfiguration.m`.
 4. Execute the `Root.m` script to start the simulation.
 
-## Demonstration
 
+
+## Demonstration
 <img src="https://lucid.app/publicSegments/view/ee6dbe6a-e682-4a6c-8698-8dc353f0018c/image.jpeg" alt="MathWorks - UAV Path Planning Percent Error visualization" width="600" height="600">
 
 ## Results
@@ -68,10 +72,39 @@ After completing either Case 1 or Case 2 in Setup, use the `SaveData.m` file to 
 
 
 
-## Results
-
 ## Future Development
 
-## Coomon Errors
+1. **Account for changes in the UAV’s weight:**
+   - Consider the following cases:
+     - **Case 1:** After delivering a package from point A to B, the UAV's total weight changes, potentially requiring PID value adjustments.
+     - **Case 2:** The UAV drops the package mid-flight, requiring real-time PID value adjustments to maintain a smooth and expected path.
+     - **Solution:** Test the drone's behavior with increased weight, record outputs, and find optimal PID settings for smooth navigation. Repeat for weight decreases and adjust PID values accordingly during mid-flight or after the package is delivered.
+
+2. **Use a higher fidelity environment:**
+   - Use Unreal Engine by Epic Games for creating a simulated urban environment.
+   - **Benefits:**
+     - Unreal Engine provides high-quality, realistic graphics and rendering capabilities (e.g., humans, birds, cars).
+     - Advanced physics simulation allows for realistic interactions (e.g., collision, gravity, friction) between objects and environmental elements.
+     - Dynamic lighting, effects, and weather conditions enhance the overall visual experience and overall simulation.
+
+3. **Implement multiple drone communication:**
+   - Reasons for multiple drones' communication include:
+     - Adapting to dynamic environments in real-time.
+     - Collaboratively gathering data over large areas efficiently.
+   - Communication enables sharing sensor readings and updating covered areas in real-time to avoid conflicts.
+
+4. **Simulation to hardware integration:**
+   - The ultimate objective is to implement simulation on hardware.
+
+## Common Errors
+
+1. When scanning building areas in `TwoDronesSTLToOMap.m`, you may notice that some buildings are not scanned clearly or are not scanned at all. To address this issue, adjust the `height` variable in either `VariableConfig.m` or `VariableConfiguration.m`. Experiment with decreasing or increasing its value to improve the scanning accuracy.
+
 
 ## Acknowledgements
+
+**Main Developers/Engineers:** Alvarez | Dang | Tiguila | Segovia  
+
+
+**Authors:** Jason Alvarez | Jonathan Dang | Jade de Jesus | Abraham Diaz | Marcos Olvera | Bryan Segovia | Prashant Tewary | Juan Tiguila | Kevin Velez | Erick Vergara
+
